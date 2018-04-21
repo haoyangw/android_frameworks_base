@@ -1,0 +1,25 @@
+From c265d23ab1e4c51642349ee9b89c584dfaa94e57 Mon Sep 17 00:00:00 2001
+From: Wang Hao Yang <haoyangw@gmail.com>
+Date: Fri, 13 Apr 2018 19:56:03 +0800
+Subject: [PATCH] Fix missing java library(so that anti-Jack works yay)
+
+Change-Id: I8cb8cf2d78546f4ac59f70b95cf844dd7ca0d321
+---
+ packages/SystemUI/Android.mk | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/packages/SystemUI/Android.mk b/packages/SystemUI/Android.mk
+index 4f39d36..a80e1f8 100644
+--- a/packages/SystemUI/Android.mk
++++ b/packages/SystemUI/Android.mk
+@@ -50,6 +50,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
+     SystemUI-tags \
+     SystemUI-proto \
+     trail-drawing \
++    guava \
+     rebound
+ 
+ LOCAL_JAVA_LIBRARIES := telephony-common
+-- 
+2.7.4
+
